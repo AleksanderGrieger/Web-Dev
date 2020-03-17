@@ -16,9 +16,23 @@
     <!-- action - where the form send the data to -->
     <!-- method - what HTTP method (get/post) -->
 
+    <!-- <form action="http://wikipedia.org" method="GET">
+        <label>
+            Username:
+            <input name="username" type="text" placeholder="username">
+        </label>
+        <label>
+            Password:
+            <input name="password" type="password" placeholder="password">
+        </label>
+        <input type="Submit">
+    </form> -->
+
     <form action="http://wikipedia.org" method="GET">
-        <input name="username" type="text" placeholder="username">
-        <input name="password" type="password" placeholder="password">
+        <label for="username">Username:</label>
+        <input id="username" type="text" placeholder="username">
+        <label for="password">Password:</label>
+        <input id="password" type="password" placeholder="password">
         <input type="Submit">
     </form>
 
