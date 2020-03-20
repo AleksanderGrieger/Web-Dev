@@ -1,0 +1,35 @@
+li{
+
+}
+
+.hello{
+
+}
+
+#name/*id*/{
+
+}
+
+*{
+    border: 1px solid lightgray;
+}
+
+li a{
+    color: red;
+}
+
+h3 + ul {
+    border: 4px solid red;
+}
+
+a[href="https://www.google.pl/webhp?hl=pl"]{
+    background: blue;
+}
+
+input [type="text"]{
+    background: blueviolet;
+}
+
+li:nth-of-type(even){
+    background: blueviolet;
+}
