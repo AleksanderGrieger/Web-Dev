@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    border-radius: 10%;
+    width: 30%;
+    margin: 5px;
+    max-width: 400px;
+    align-self: center;
+}
+
+body {
+    background-color: #555;
+}
+
+header {
+    background-color: #d2d2ff;
+    font-family: 'Arial', 'sans-serif';
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    text-align: center;
+    line-height: 2;
+}
+
+#gify {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-wrapper {
+    margin: 20px auto;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+label{
+    color: yellow;
+    font-family: 'Arial', 'sans-serif';
+    letter-spacing: 1px;
+
+}
+
+input {
+    font-family: 'Arial', 'sans-serif';
+    color: white;
+    background-color: #555;
+    outline: none;
+    border-radius: 5%;
+}
+
+input:focus {
+    background-color: #555;
+}
+
+.submit {
+    width: 120px;
+    height: 21px;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

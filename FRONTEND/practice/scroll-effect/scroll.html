@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Effect</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .zoom{
+            width: 100%;
+            height: 1000px;
+            position: relative;
+            overflow: hidden;
+            /* background: url(https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&w=1000&q=80); */
+            background-image: url('C:/Users/User/Desktop/Web-Dev/FRONTEND/scroll-effect/bg.jpg');
+            background-size: cover;
+        }
+        .zoom:before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 200px;
+            z-index: 1000;
+            background: linear-gradient(transparent,#fff);
+        }
+        .zoom #layer1{
+            position: absolute;
+            left: 40%;
+            width: 100%;
+            transform: translateX(-50%);
+            z-index: 10;
+        }
+        .zoom #layer2{
+            position: absolute;
+            right: 0;
+            width: 100%;
+            z-index: 9;
+        }
+        .zoom #text{
+            position: absolute;
+            right: 0;
+            width: 100%;
+            transform: translateY(50%);
+        }
+        .content{
+            padding: 100px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .content h2{
+            margin: 0;
+            padding: 0;
+            font-size: 4em;
+        }
+        .content p{
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <section class="zoom">
+        <img src="C:\Users\User\Desktop\Web-Dev\FRONTEND\scroll-effect\mountain1.png" id="layer1">
+        <img src="C:\Users\User\Desktop\Web-Dev\FRONTEND\scroll-effect\mountain2.png" id="layer2">
+        <img src="C:\Users\User\Desktop\Web-Dev\FRONTEND\scroll-effect\text.png" id="text">
+    </section>
+    <section class="content">
+        <h1>LOLOLOLOLO</h1>
+        <h2>axasdaxdasdas</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, fuga adipisci obcaecati voluptatem, tenetur deserunt repellendus earum, temporibus magnam voluptate qui nostrum maiores minus officia odit delectus quisquam inventore recusandae?
+        </p>
+    </section>
+    <script type="text/javascript">
+        let layer1 = document.getElementById('layer1')
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll', function(e){
+            let offset =window.pageYOffset;
+            scroll = offset;
+            layer1.style.width = (100 + scroll/5) + '%';
+        })
+       
+       
+        let layer2 = document.getElementById('layer2')
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll', function(e){
+            let offset =window.pageYOffset;
+            scroll = offset;
+            layer2.style.width = (100 + scroll/5) + '%';
+            layer2.style.left = scroll/50 + '%';
+        })
+        
+        
+        let text = document.getElementById('text')
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll', function(e){
+            let offset =window.pageYOffset;
+            scroll = offset;
+            layer2.style.width = (100 + scroll/5) + '%';
+            text.style.top = - scroll/10 + '%';
+        })
+    </script>
+</body>
+</html>

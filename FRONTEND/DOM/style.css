@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.headPart {
+  background-color: rgb(93, 150, 8);
+  color: rgb(202, 196, 196);
+  /* grid-row: 1; */
+  display: flex;
+}
+.headPart h1 {
+  margin-left: 3em;
+}
+.headPart input {
+  color: teal;
+  border-radius: 10%;
+  position: absolute;
+  left: 70%;
+}
+
+.bodyPart {
+  border: solid grey 1px;
+  border-radius: 2%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.bodyPart h2 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.bodyPart ul {
+  list-style: none;
+  position: absolute;
+  left: 20%;
+}
+.bodyPart ul li {
+  border: solid grey 1px;
+}

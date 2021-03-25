@@ -1,0 +1,58 @@
+body{
+    background: linear-gradient(to right,aqua,rgb(141, 31, 113));
+    text-align: center;
+    
+}
+
+h1{
+    border: 1px solid;
+    width: 220px;
+    background: linear-gradient(to left, aqua, rgb(141, 31, 113));
+    color: blanchedalmond;
+    display: block;
+    margin: 4px;
+    padding: 2px;
+}
+
+.main{
+    border: 10px solid white;
+    border-radius: 5%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-95%);
+}
+
+table tr td .button{
+    background-color: rgb(243, 137, 217);
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 2px;
+    outline: none;
+    transition: background 0.5s;
+    overflow: hidden;
+}
+
+.button:hover{
+    background-color: steelblue;
+    color: white;
+}
+
+.textview{
+    width: 210px;
+    margin: 4px;
+    font-size: 25px;
+    padding: 5px;
+}
+
+
+table tr td #op{
+    background-color: rgb(84, 230, 230);
+    border-radius: 10%;
+
+}
+
+#op:hover{
+    background-color: rgb(228, 121, 192);
+}
